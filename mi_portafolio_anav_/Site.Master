@@ -1,0 +1,59 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.master.cs" Inherits="mi_portafolio_anav_.SiteMaster" %>
+
+<!DOCTYPE html>
+
+<html lang="en">
+<head runat="server">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" 
+          crossorigin="anonymous" referrerpolicy="no-referrer"/>
+
+    <title>Mi portafolio</title>
+    <link href="Content/Site.css" rel="stylesheet" />
+    <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+</asp:ContentPlaceHolder>
+
+</head>
+<body>
+    <form runat="server">
+         <section id="inicio" style="height:auto">
+        <div class="contenido">
+            <header>
+                <div class="contenido-header">
+                    <h1>Mi Portafolio</h1>
+                    <nav id="nav" class="">
+                        <ul id="links">
+                            <li><a href="#inicio" class="seleccionado" onclick="seleccionar">INICIO</a></li>
+                            <li><a href="#sobremi" onclick="seleccionar">SOBRE MI</a></li>
+                            <li><a href="#misintereses" onclick="seleccionar">MIS INTERESES</a></li>
+                            <li><a href="#misproyectos" onclick="seleccionar">MIS PROYECTOS</a></li>
+                            
+                        </ul>
+                    </nav>
+                </div>
+            </header>
+            
+        </div>
+    </section>
+
+
+            <asp:ContentPlaceHolder ID="MainContent" runat="server">
+            </asp:ContentPlaceHolder>
+            
+      
+    </form>
+    <!-- SECCION FOOTER -->
+    <footer>
+        <p>Todos los derechos reservados - 2023</p>
+        <div class="redes">
+            <a href="https://www.facebook.com/" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+            <a href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-instagram-square"></i></a>
+        </div>
+
+    </footer>
+
+    <script src="script.js"></script>
+    
+</body>
+</html>
